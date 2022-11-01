@@ -16,25 +16,25 @@ function Menu() {
                 <div className="container mt-5">
                     <div className="col-md-6 my-2 mx-auto">
                         <div className="row justify-content-center">
-                            <Button>
+                            <a href="/game" className="btn btn-primary">
                                 START GAME
-                            </Button>
+                            </a>
                         </div>
                     </div>
 
                     <div className="col-md-6  my-2 mx-auto">
                         <div className="row justify-content-center">
-                            <Button variant="outline-secondary">
+                            <a href="/scores" className="btn btn-outline-secondary">
                                 Scores
-                            </Button>
+                            </a>
                         </div>
                     </div>
 
                     <div className="col-md-6 my-2 mx-auto">
                         <div className="row justify-content-center">
-                            <Button variant="outline-secondary">
+                            <a href="/about" className="btn btn-outline-secondary">
                                 About
-                            </Button>
+                            </a>
                         </div>
                     </div>
                 </div>
