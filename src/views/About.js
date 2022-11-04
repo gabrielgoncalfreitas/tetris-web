@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
 import Logo from "../assets/img/logo.jpg";
 
@@ -7,25 +7,25 @@ function About() {
   return (
     <Container>
       <div className="d-flex justify-content-center flex-column">
-        <div className="row justify-content-center">
-          <div className="col-md-6 col-md-4">
-            <img src={Logo} className="img-fluid" alt="Logo" />
-          </div>
-        </div>
+        <Row className="justify-content-center">
+          <Col md="6">
+            <Image src={Logo} fluid alt="Logo"/>
+          </Col>
+        </Row>
 
-        <div className="container mt-5">
+        <Container className="mt-5">
           <p className="text-center ">
             Game developed by: <a href="https://github.com/gabrielgoncalfreitas">github.com/gabrielgoncalfreitas</a>
           </p>
 
-          <div className="col-md-6 my-2 mx-auto">
-            <div className="row justify-content-center">
-              <a href="/" className="btn btn-outline-primary">
+          <Col md="6" className="my-2 mx-auto">
+            <Row className="justify-content-center">
+              <Button href="/" variant="outline-primary">
                 RETURN HOME
-              </a>
-            </div>
-          </div>
-        </div>
+              </Button>
+            </Row>
+          </Col>
+        </Container>
       </div>
     </Container>
   );

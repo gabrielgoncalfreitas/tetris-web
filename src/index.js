@@ -7,6 +7,7 @@ import "./style.css";
 
 import App from './views/App';
 import About from './views/About';
+import Game from './views/Game';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about" element={<About />} />
+      <Route path="/game" element={<Game />} />
     </Routes>
   </BrowserRouter>
 );
